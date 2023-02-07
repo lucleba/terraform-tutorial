@@ -18,7 +18,7 @@ resource "docker_image" "nginx" {
 
 resource "docker_container" "nginx" {
   image = docker_image.nginx.repo_digest
-  name  = "tutorial"
+  name  = "terraform-tutorial"
   ports {
     internal = 80
     external = 8000
